@@ -13,5 +13,7 @@ export FLASK_DEBUG=1
 ```
 
 ```
+heroku config:set SENDGRID_API_KEY
+heroku config:set MAIL_DEFAULT_SENDER
 git push heroku main
 ```
