@@ -17,7 +17,7 @@ app.config['MAIL_PASSWORD'] = os.environ.get('SENDGRID_API_KEY')
 app.config['MAIL_DEFAULT_SENDER'] = os.environ.get('MAIL_DEFAULT_SENDER')
 mail = Mail(app)
 
-@app.route('/testmail', methods=['GET', 'POST'])
+""" @app.route('/testmail', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         recipient = request.form['recipient']
@@ -31,7 +31,7 @@ def index():
         mail.send(msg)
         flash(f'A test message was sent to {recipient}.')
         return redirect(url_for('index'))
-    return render_template('index.html')
+    return render_template('index.html') """
 
 @app.route('/form/contact', methods=['POST', 'GET'])
 def contactform():
