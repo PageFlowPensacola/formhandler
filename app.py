@@ -43,7 +43,7 @@ def contactform():
     name = details['name']
     email = details['email']
     message = details['message']
-    msg = Message(f'Contact PageFlow', recipients=['mike@pageflow.com'])
+    msg = Message(f'Contact PageFlow', recipients=['support@pageflow.com','john@pageflow.com'])
     msg.body = f'{name} ({email}) sends: {message}'
     msg.reply_to = email
     mail.send(msg)
